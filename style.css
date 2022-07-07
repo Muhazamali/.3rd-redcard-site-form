@@ -41,8 +41,7 @@ label {
 main {
   background-color: brown;
 }
-h1,
-p {
+h1, p {
   margin-left: 60px;
   padding: 0px;
   margin-top: 0px;
@@ -50,7 +49,7 @@ p {
 form > p {
   color: white;
 }
-.column-left p {
+.column-left p{
   margin-left: 200px;
   font-size: 1.5rem;
 }
@@ -90,13 +89,14 @@ form > p {
     margin: 5px;
     margin-right: 15px;
   }
-  .column-left h1{
+  .column-left h1 {
     margin: 0px;
-  }
-
-}.column-left p{
-    margin-left: 0px;
+  
 }
-.column-left h2{
-    margin-left: 0px;
+.column-left p {
+  margin-left: 0px;
+}
+.column-left h2 {
+  margin-left: 0px;
+}
 }
