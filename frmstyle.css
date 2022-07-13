@@ -1,0 +1,118 @@
+.row {
+  display: flex;
+  margin-left: 20px;
+}
+header img{
+  padding: 0px;
+  margin: 0px;
+}
+.column-left,
+.column-right {
+  position: relative;
+  flex: 50%;
+}
+input[type="text"],
+textarea {
+  background-color: brown;
+  display: block;
+  width: 20vw;
+  color: white;
+  border: 2px solid white;
+  font-size: large;
+  padding: 5px;
+  margin-left: 50px;
+  padding-left: 10px;  
+  margin-top: 0px;
+  margin-bottom: 2px;
+  
+}
+input[type="checkbox"] {
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.submit {
+  margin-left: 50px;
+  width: 20vw;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+label {
+  color: white;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+main {
+  background-color: brown;
+}
+h1, p {
+  margin-left: 60px;
+  padding: 0px;
+  margin-top: 0px;
+}
+form > p {
+  color: white;
+}
+.column-left p{
+  margin-left: 200px;
+  font-size: 1.5rem;
+}
+
+.column-left h1 {
+  color: white;
+  font-size: 5rem;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+.column-left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 200px;
+}
+.column-right img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.column-right h1{
+  padding: 0px;
+  margin: 0px;
+  margin-left: 60px;
+}
+@media (max-width: 680px) {
+  .row {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+  .column-left,
+  .column-right {
+    flex: 100%;
+  }
+  .column-left{
+    padding-bottom: 50px;
+  }
+  .column-right h1 ,p{
+    margin: 0px;
+  }
+  textarea,
+  input[type="text"],
+  input[type="submit"] {
+    width: 100%;
+    margin: 5px;
+    margin-right: 15px;
+  }
+  .column-left h1 {
+    margin: 0px;
+  
+}
+.column-left p {
+  margin-left: 0px;
+}
+.column-left h2 {
+  margin-left: 0px;
+}
+}

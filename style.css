@@ -1,102 +1,93 @@
-.row {
-  display: flex;
-  margin-left: 20px;
-}
-.column-left,
-.column-right {
+header {
+  background-color: brown;
   position: relative;
-  flex: 50%;
 }
-input[type="text"],
-textarea {
-  background-color: brown;
-  display: block;
-  width: 20vw;
-  color: white;
-  border: 1.5px solid white;
-  padding: 15px;
-
-  margin-left: 50px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  font-size: 10px;
-}
-input[type="checkbox"] {
-  margin-left: 50px;
-}
-
-.submit {
-  margin-left: 50px;
-  width: 20vw;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-label {
-  color: white;
-  font-size: 15px;
-  margin-top: 0px;
-  margin-left: 50px;
-  margin-bottom: 5px;
-}
-main {
-  background-color: brown;
-}
-h1, p {
-  margin-left: 60px;
-  padding: 0px;
-  margin-top: 0px;
-}
-form > p {
-  color: white;
-}
-.column-left p{
+header div {
   margin-left: 200px;
-  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+header img {
+  width: 100px;
 }
 
-.column-left h1 {
+header h1 {
+  font-size: 4rem;
   color: white;
-  font-size: 5rem;
-  margin-top: 150px;
-  margin-left: 200px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
 }
-.column-left h2 {
+header p {
   font-size: 2rem;
-  font-weight: bold;
-  margin-left: 200px;
+  line-height: 2.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  padding-bottom: 35px;
 }
-.column-right img {
+
+.image {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.column-right p {
+.image img {
   padding: 0px;
+  margin: 0px;
 }
-@media (max-width: 680px) {
-  .row {
-    overflow-x: hidden;
-    flex-wrap: wrap;
+.mono img {
+  display: inline;
+  float: left;
+}
+
+.clubs p {
+  text-align: center;
+}
+.container {
+  display: flex;
+}
+.clubs {
+  flex: 20%;
+  text-align: center;
+  float: left;
+}
+.clubs img {
+  width: 120px;
+}
+.red {
+  color: red;
+}
+h2 {
+  font-size: 2rem;
+  margin-top: 5px;
+  padding-top: 4px;
+}
+.foot {
+  background-color: brown;
+  position: relative;
+  overflow-y: hidden;
+}
+.foot h2 {
+  font-size: 3.5rem;
+  padding: 25px;
+  color: white;
+  word-spacing: 4px;
+  margin-left: 150px;
+  margin-right: 150px;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 680px) {
+  header div {
+    margin-left: 0px;
   }
-  .column-left,
-  .column-right {
-    flex: 100%;
+  header p {
+    letter-spacing: normal;
+    font-size: larger;
   }
-  textarea,
-  input[type="text"],
-  input[type="submit"] {
-    width: 100%;
-    margin: 5px;
-    margin-right: 15px;
+  .foot h2 {
+    margin-left: 0px;
+    font-size: 2rem;
+    margin-right: 0px;
   }
-  .column-left h1 {
-    margin: 0px;
-  
-}
-.column-left p {
-  margin-left: 0px;
-}
-.column-left h2 {
-  margin-left: 0px;
-}
+  .clubs img {
+    width: 80px;
+  }
 }
